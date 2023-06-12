@@ -20,6 +20,14 @@ Can automate software defined networking and track the states of each resource d
 
 `terraform init` initialises the working directory that contains the code. It firsts downloads the ancillary components that allow the code to work like modules and plugins i.e cloud providers. It also sets up the backend for storing terraform state files, a mechanism by which terraform tracks resources 
 
+### Key concepts - Plan, Apply, Destroy 
+
+`terraform plan` -  reads the code from `main.tf` and creates/shows a plan for deployment. Allows user to review action plan before executing anything. This stage, authentication credentials are used to connect to infrastructure 
+
+`terraform apply` -  deploys the instructions and statements in the code to cloud provider. Updates state file for tracking mechanisms 
+
+`terraform destroy` - destroys the infrastructure by looking at the stored statefile and destroys all resources created. Should be used with caution
+
 
 
 
