@@ -17,8 +17,8 @@ tf statefile helps map the already managed infrastructure within aws/azure to th
 This file is a JSON file containing all the metadata regarding a terraform deployment and details of the deployments it has already done
 
 Example below: 
-a
-```{
+```
+{
   "version": 4,
   "terraform_version": "1.5.0",
   "serial": 3,
