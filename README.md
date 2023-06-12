@@ -38,15 +38,29 @@ provider "aws"{
 }
 ```
 
-02. Code below is an example of a provider configuration
+02. Code below is an example of a resource configuration. In this example, resource is the keyword, aws_instance is the name of resource by the cloud provider and web is the user provided arbitrary name. In the curly brackets, the resource config arguments are listed like instance type and ami. These will change per resource type 
 
 ```
 resource "aws_instance" "web" {
     ami    = "ami-a1b2c3d4"
-    instance_typpe = "t2.micro"
+    instance_type = "t2.micro"
 }
+```
+
+To access the resource above you would use `aws_instance.web` argument. You can then access any attributes that this resource has within your code 
+
+3.0 Below is an example of a data resource block. In this instance we have all the same things as before but the data source arguments are tracking details of an ALREADY EXISTING resource 
 
 ```
+data "aws_instance" "vm1" {
+    instance_id = "i-1234567abcdef"
+}
+```
+
+To access the data resource, you use `data.aws_instance.vm1` 
+
+Terraform executes files with the .tf extention and are written in hcl language 
+
 
 
 
