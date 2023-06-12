@@ -67,3 +67,4 @@ Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 daniel@NT2201LB:~/terraform$ 
 ```
 
+
