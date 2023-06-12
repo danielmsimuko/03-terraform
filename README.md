@@ -28,8 +28,25 @@ Can automate software defined networking and track the states of each resource d
 
 `terraform destroy` - destroys the infrastructure by looking at the stored statefile and destroys all resources created. Should be used with caution
 
+### Understanding terraform code
 
+01. Code below is an example of a provider configuration
 
+```
+provider "aws"{
+    region = "us-east-1"
+}
+```
+
+02. Code below is an example of a provider configuration
+
+```
+resource "aws_instance" "web" {
+    ami    = "ami-a1b2c3d4"
+    instance_typpe = "t2.micro"
+}
+
+```
 
 
 
