@@ -15,10 +15,24 @@ If the command within a provisioner returns non-zero code, its considered failed
 
 ### Terraform state 
 
-`terraform state list ` - lists out all the resources tracked by the terraform state file 
+`terraform state list` - lists out all the resources tracked by the terraform state file 
 
 `terraform state rm` - delete a resource from the terraform state file 
 
-`terraform state show ` - show details of a resource tracked in the terraform state file 
+`terraform state show` - show details of a resource tracked in the terraform state file 
+
+Local storage is where state files are saved but we can save them remotely. Examples include AWS S3, google cloud storage etc... allows sharing state files between distributed teams   
+
+Remote state storage also allows for locking state so parallel executions dont coincide and can have a system where output files can be accessed elsewhere 
+
+### Modules 
+
+A module is a container for multiple resources used together 
+
+Every terraform configuration has at least one module called root 
+
+ 
+
+ 
 
 
