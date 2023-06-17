@@ -18,7 +18,7 @@ Once terraform is installed initialising can be done
 
 `terraform init` initialises the working directory that contains the code. It firsts downloads the ancillary components that allow the code to work like modules and plugins i.e cloud providers. It also sets up the backend for storing terraform state files, a mechanism by which terraform tracks resources 
 
-### Key concepts - Plan, Apply, Destroy 
+## Key concepts - Plan, Apply, Destroy 
 
 `terraform plan` -  reads the code from `main.tf` and creates/shows a plan for deployment. Allows user to review action plan before executing anything. This stage, authentication credentials are used to connect to infrastructure 
 
@@ -26,7 +26,7 @@ Once terraform is installed initialising can be done
 
 `terraform destroy` - destroys the infrastructure by looking at the stored statefile and destroys all resources created. Should be used with caution
 
-### Understanding terraform code
+## Understanding terraform code
 
 01. Code below is an example of a provider configuration
 
@@ -54,42 +54,4 @@ data "aws_instance" "vm1" {
     instance_id = "i-1234567abcdef"
 }
 ```
-
-To access the data resource, you use `data.aws_instance.vm1` 
-
-Terraform executes files with the .tf extention and are written in hcl language 
-
-### Installation 
-
-On an linux machine: 
-
-https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
-
-### Terraform Providers
-
-Are a way of abstracting integrations with API control layer of the infrastructure vendors 
-
-Looks for providers in the terraform providers registry
-
-### Terrraform State
-
-tf statefile helps map the already managed infrastructure within aws/azure to the terraform main code 
-
-This file is a JSON file containing all the metadata regarding a terraform deployment and details of the deployments it has already done
-
-Example below: 
-```
-{
-  "version": 4,
-  "terraform_version": "1.5.0",
-  "serial": 3,
-  "lineage": "a1b2c3d4e5",
-  "outputs": {},
-  "resources": [],
-  "check_results": null
-}
-```
-
-Important to never lose a tfstatefile or let it fall into the wrong hands as sensitive date could reside in it
-
 
