@@ -1,14 +1,10 @@
-# 03 - Learning Terraform 
+# 03 - Learning Terraform
 
-Notes on the way to Terraform Association 
+Terraform is popular infrastructure as code tool used to deploy infrastructure to cloud platforms declaratively through code. This means infrastructure can be deployed automatically, quickly, reduce human error and be reliable. 
 
-### Infrastructure as Code
+Terraform works by tracking the states of each resource deployed and referencing it to the current set of deployed infrastructure to determine the end state or what it should be. This tracking is done in a file called the `tfstate` file. 
 
-Writing down what you want to be deployed declaratively through code. Automated, quick and reduces human error
-
-Can automate software defined networking and track the states of each resource deployed 
-
-### Terraform workflow
+## Terraform workflow
 
 `Write` - writing your terraform code is the first stage of the workflow. This generally starts of with a github repo as common practice 
 
@@ -16,7 +12,9 @@ Can automate software defined networking and track the states of each resource d
 
 `Applying` - Is the last stage where you are ready to provision the infrastructure on the cloud platforms
 
-### Initialising terraform 
+## Initialising terraform 
+
+Once terraform is installed initialising can be done
 
 `terraform init` initialises the working directory that contains the code. It firsts downloads the ancillary components that allow the code to work like modules and plugins i.e cloud providers. It also sets up the backend for storing terraform state files, a mechanism by which terraform tracks resources 
 
