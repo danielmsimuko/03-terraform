@@ -58,6 +58,18 @@ daniel@NT2201LB:~/terraform/azure$ az account show
 
 If you are not yet connected, use: `https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli`
 
-Once you are here, you can now install terraform: 
+Once you are here, you can now install terraform via official website and documentation: 
+
+https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli
+
+Verify terraform installation via:
+
+```
+daniel@NT2201LB:~/terraform/azure$ terraform -version
+Terraform v1.5.0
+on linux_amd64
+```
+
+You now have a successful installation. 
 
 
