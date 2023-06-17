@@ -29,3 +29,35 @@ Legal docs and information: aka.ms/AzureCliLegal
 Your CLI is up-to-date
 
 ```
+
+If azure cli has not been installed: use: 
+
+```
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+
+To connect to your account in azure, first check using: 
+
+```
+daniel@NT2201LB:~/terraform/azure$ az account show
+{
+  "environmentName": "AzureCloud",
+  "homeTenantId": "a1b2",
+  "id": "a1b2",
+  "isDefault": true,
+  "managedByTenants": [],
+  "name": "a1b2",
+  "state": "Enabled",
+  "tenantId": "a1b2",
+  "user": {
+    "name": "dmsimuko",
+    "type": "user"
+  }
+}`
+```
+
+If you are not yet connected, use: `https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli`
+
+Once you are here, you can now install terraform: 
+
+
