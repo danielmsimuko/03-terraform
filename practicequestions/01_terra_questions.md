@@ -17,7 +17,6 @@ c. idempotency
 ```
 
 13. If you manually destroy infrastructure, what is the best practice reflecting this change in Terraform?
-
 ```
 using command terraform refresh. this will try to find any resources held in the state file and update
 with any drift that has happened in the provider outside of Terraform since it was last ran.
@@ -26,8 +25,30 @@ the config file is the only one not processed when terraform refresh is run and 
 ```
 
 14. What information does the public Terraform Module Registry automatically expose about published modules?
-
 ```
 optional/required input variables
 default values and outputs 
+```
+
+15. What do these three string functions mean? split, join, chomp
+```
+split produces a list by dividing a string at every given separator
+
+split(separator, string)
+[
+  "separator",
+  "string",
+]
+
+join produces a string by concatenating all of the elements of the string provided
+
+> join("-", ["foo", "bar", "baz"])
+"foo-bar-baz"
+
+chomp removes newline characters at the end of a string
+
+> chomp("hello\n")
+hello
+
+
 ```
