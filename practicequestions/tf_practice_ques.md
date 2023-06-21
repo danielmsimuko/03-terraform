@@ -39,3 +39,7 @@ provider "provider_name" {
 
 Terraform configurations must declare which providers they require so that Terraform can install and use them.
 ```
+6. You run a local-executable provisioner in a null resource called null_resource.run_script and realize that you need to rerun the script. Which of the following commands would you use first?
+```
+terraform apply -replace="null_resource.run_script"
+```
