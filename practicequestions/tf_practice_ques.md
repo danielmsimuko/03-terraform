@@ -22,8 +22,10 @@ terraform cloud
 
 4. What is the workflow for deploying new infrastructure with Terraform?
 ```
-Write terraform config gile 
+Write terraform config file
+run terraform fmt to format file syntax 
 run terraform init to initialise
+run terraform validate to look for syntax error
 run terraform plan to plan changes
 terraform apply to create new infra
 ```
