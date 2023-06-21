@@ -21,6 +21,8 @@ c. idempotency
 ```
 using command terraform refresh. this will try to find any resources held in the state file and update
 with any drift that has happened in the provider outside of Terraform since it was last ran.
+
+the config file is the only one not processed when terraform refresh is run and the state file is updated during the refresh
 ```
 
 14. 
