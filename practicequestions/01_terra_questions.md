@@ -25,4 +25,9 @@ with any drift that has happened in the provider outside of Terraform since it w
 the config file is the only one not processed when terraform refresh is run and the state file is updated during the refresh
 ```
 
-14. 
+14. What information does the public Terraform Module Registry automatically expose about published modules?
+
+```
+optional/required input variables
+default values and outputs 
+```
