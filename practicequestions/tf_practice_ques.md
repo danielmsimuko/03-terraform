@@ -22,3 +22,13 @@ similarly named remote spaces
 a. the remote backend can runs on dedicated infrastructure on premises or in 
 terraform cloud
 ```
+
+4. What is the workflow for deploying new infrastructure with Terraform?
+
+```
+Write terraform config gile 
+run terraform init to initialise
+run terraform plan to plan changes
+terraform apply to create new infra
+
+```
