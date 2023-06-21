@@ -15,3 +15,10 @@ it will then decide to add/change/delete accordingly
 f. terraform remote backend can work with either a single remote cloud workspace or multiple
 similarly named remote spaces 
 ```
+
+3. How is terraform remote backend different than other state backends such as S3, consul?
+
+```
+a. the remote backend can runs on dedicated infrastructure on premises or in 
+terraform cloud
+```
