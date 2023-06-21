@@ -49,6 +49,19 @@ chomp removes newline characters at the end of a string
 
 > chomp("hello\n")
 hello
+```
 
+16. You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with Terraform and want to manage these VMs using Terraform instead. What are the two things you must do to achieve this?
 
 ```
+A. use the terraform import command for the existing virtual machines. Allows you to import existing
+infrastructure into your terraform state file.
+
+B. write terraform config file for existing vms once they have been imported into the terraform statefile. these need a desired state. 
+```
+
+
+
+
+
+
