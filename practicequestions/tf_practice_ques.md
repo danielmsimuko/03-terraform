@@ -27,3 +27,15 @@ run terraform init to initialise
 run terraform plan to plan changes
 terraform apply to create new infra
 ```
+
+5. a provider configuration block is required in every terraform configuration. A = yes
+
+```
+provider "provider_name" {
+  features {
+      etc...
+  }
+}
+
+Terraform configurations must declare which providers they require so that Terraform can install and use them.
+```
