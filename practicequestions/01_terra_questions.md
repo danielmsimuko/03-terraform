@@ -88,6 +88,13 @@ the terraform taint command can be used let terraform know that a resource has b
 be destroyed and recreated on the next apply.
 ```
 
+20. Terraform can import modules from a number of sources. What are the three sources?
+
+```
+GitHub repository
+Local path
+Terraform Module Registry
+```
 
 
 
