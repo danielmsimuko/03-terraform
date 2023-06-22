@@ -60,7 +60,19 @@ infrastructure into your terraform state file.
 B. write terraform config file for existing vms once they have been imported into the terraform statefile. these need a desired state. 
 ```
 
+17. You have recently started a new job at a retailer as an engineer. As part of this new role, you have been tasked with evaluating multiple
+outages that occurred during peak shopping time during the holiday season. Your investigation found that the team is manually deploying new compute
+instances and configuring each compute instance manually. This has led to inconsistent configuration between each compute instance.
+ 
+How would you solve this using infrastructure as code?
 
+```
+Implement a provisioning pipeline that deploys infrastructure configurations committed to a version control system after it has undergone code reviews
+```
+
+18. 
+19.
+20. Implement a provisioning pipeline that deploys infrastructure configurations committed to your version control system following code reviews 
 
 
 
