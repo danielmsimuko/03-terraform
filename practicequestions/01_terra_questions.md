@@ -52,37 +52,41 @@ hello
 ```
 
 16. You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool.
-However, you are standardizing with Terraform and want to manage these VMs using Terraform instead. What are the two things you must do to achieve this?
+However, you are standardizing with Terraform and want to manage these VMs using Terraform instead.
+
+What are the two things you must do to achieve this?
 
 ```
 A. use the terraform import command for the existing virtual machines. Allows you to import existing
 infrastructure into your terraform state file.
 
-B. write terraform config file for existing vms once they have been imported into the terraform statefile. these need a desired state. 
+B. write terraform config file for existing vms once they have been imported into the terraform statefile
 ```
 
-17. You have recently started a new job at a retailer as an engineer. As part of this new role, you have been tasked with evaluating multiple
-outages that occurred during peak shopping time during the holiday season. Your investigation found that the team is manually deploying new compute
-instances and configuring each compute instance manually. This has led to inconsistent configuration between each compute instance.
+17. You have recently started a new job at a retailer as an engineer. As part of this new role
+you have been tasked with evaluating multiple outages that occurred during peak shopping time during the
+holiday season. Your investigation found that the team is manually deploying new computeinstances and configuring each
+compute instance manually. This has led to inconsistent configuration between each compute instance.
  
 How would you solve this using infrastructure as code?
 ```
-Implement a provisioning pipeline that deploys infrastructure configurations committed to a version control system after it has undergone code reviews
+Implement a provisioning pipeline that deploys infrastructure configurations committed to a version control
+system after it has undergone code reviews
 ```
 
 18. What does the terraform init command do after it has be run
 ```
-The terraform init command initializes a new or existing Terraform working directory by downloading and installing any necessary plugins and modules
-specified in the configuration. It does not create a main.tf file or any other configuration file in the current directory.
+The terraform init command initializes a new or existing Terraform working directory by downloading and
+installing any necessary plugins and modulesspecified in the configuration. It does not create a main.tf file or
+any other configuration file in the current directory.
 ```
 
 19. Why would you use the terraform taint command?
 
 ```
-the terraform taint command can be used let terraform know that a resource has been tainted forcing it to be destroyed and recreated on the next apply.
+the terraform taint command can be used let terraform know that a resource has been tainted forcing it to
+be destroyed and recreated on the next apply.
 ```
-21.
-22. Implement a provisioning pipeline that deploys infrastructure configurations committed to your version control system following code reviews 
 
 
 
