@@ -51,7 +51,8 @@ chomp removes newline characters at the end of a string
 hello
 ```
 
-16. You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with Terraform and want to manage these VMs using Terraform instead. What are the two things you must do to achieve this?
+16. You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool.
+However, you are standardizing with Terraform and want to manage these VMs using Terraform instead. What are the two things you must do to achieve this?
 
 ```
 A. use the terraform import command for the existing virtual machines. Allows you to import existing
@@ -65,14 +66,23 @@ outages that occurred during peak shopping time during the holiday season. Your 
 instances and configuring each compute instance manually. This has led to inconsistent configuration between each compute instance.
  
 How would you solve this using infrastructure as code?
-
 ```
 Implement a provisioning pipeline that deploys infrastructure configurations committed to a version control system after it has undergone code reviews
 ```
 
-18. 
-19.
-20. Implement a provisioning pipeline that deploys infrastructure configurations committed to your version control system following code reviews 
+18. What does the terraform init command do after it has be run
+```
+The terraform init command initializes a new or existing Terraform working directory by downloading and installing any necessary plugins and modules
+specified in the configuration. It does not create a main.tf file or any other configuration file in the current directory.
+```
+
+19. Why would you use the terraform taint command?
+
+```
+the terraform taint command can be used let terraform know that a resource has been tainted forcing it to be destroyed and recreated on the next apply.
+```
+21.
+22. Implement a provisioning pipeline that deploys infrastructure configurations committed to your version control system following code reviews 
 
 
 
