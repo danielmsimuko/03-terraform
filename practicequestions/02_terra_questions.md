@@ -33,4 +33,13 @@ Provisioners can be used to bootstrap a resource, cleanup before destroy, run co
 To use a provisioner in Terraform, you must include it as part of a resource configuration block.
 ```
 
-25. 
+25. What does the default "local" Terraform backend store?
+
+```
+The default "local" Terraform backend stores the state file on the local disk of the machine running Terraform.
+The state file contains information about the resources managed by Terraform, such as their current state and any dependencies between
+them. When running Terraform commands, such as terraform plan or terraform apply, Terraform reads the state file to determine
+the current state of the resources and what changes need to be made to reach the desired state.
+```
+
+26. 
