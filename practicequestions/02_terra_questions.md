@@ -38,8 +38,8 @@ To use a provisioner in Terraform, you must include it as part of a resource con
 ```
 The default "local" Terraform backend stores the state file on the local disk of the machine running Terraform.
 The state file contains information about the resources managed by Terraform, such as their current state and any dependencies
-between them. When running Terraform commands, such as terraform plan or terraform apply, Terraform reads the state file to 7
-determine the current state of the resources and what changes need to be made to reach the desired state.
+between them. When running Terraform commands, such as terraform plan or terraform apply, Terraform reads the state file
+to determine the current state of the resources and what changes need to be made to reach the desired state.
 ```
 
 26. You have multiple team members collaborating on infrastructure as code (IaC) using Terraform, and want to apply formatting
@@ -68,6 +68,16 @@ Option B, [ for o in var.list : o.id ], uses a list comprehension to iterate ove
 a new list that contains only the id attribute of each object.
 ```
 
+29. What are some of the arguments you can use when declaring a terraform variable 
+
+```
+default - A default value which then makes the variable optional.
+type - This argument specifies what value types are accepted for the variable.
+description - This specifies the input variable's documentation.
+validation - A block to define validation rules, usually in addition to type constraints.
+sensitive - Limits Terraform UI output when the variable is used in configuration.
+nullable - Specify if the variable can be null within the module.
+```
 
 
 
