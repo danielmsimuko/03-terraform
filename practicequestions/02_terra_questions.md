@@ -42,4 +42,10 @@ them. When running Terraform commands, such as terraform plan or terraform apply
 the current state of the resources and what changes need to be made to reach the desired state.
 ```
 
-26. 
+26. You have multiple team members collaborating on infrastructure as code (IaC) using Terraform, and want to apply formatting standards for readability.
+How can you format Terraform HCL (HashiCorp Configuration Language) code according to standard Terraform style convention?
+
+```
+Run the terraform fmt command during the code review phase of your CI/CD process
+```
+
