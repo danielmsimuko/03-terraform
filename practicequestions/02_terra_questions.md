@@ -42,18 +42,63 @@ between them. When running Terraform commands, such as terraform plan or terrafo
 determine the current state of the resources and what changes need to be made to reach the desired state.
 ```
 
-26. You have multiple team members collaborating on infrastructure as code (IaC) using Terraform, and want to apply formatting standards for readability.
-How can you format Terraform HCL (HashiCorp Configuration Language) code according to standard Terraform style convention?
+26. You have multiple team members collaborating on infrastructure as code (IaC) using Terraform, and want to apply formatting
+standards for readability. How can you format Terraform HCL code according to standard Terraform style convention?
 
 ```
 Run the terraform fmt command during the code review phase of your CI/CD process
 ```
 
-27. What value does the Terraform Cloud/Terraform Enterprise private module registry provide over the public Terraform Module Registry?
+27. What value does the Terraform Cloud/Enterprise private module registry provide over the public Terraform Module Registry?
 
 ```
-Among other things, The ability to restrict modules to members of Terraform Cloud or Enterprise organization is one benefit that terraform enterprise has
-over terraform community edition.
-
+Among other things, The ability to restrict modules to members of Terraform Cloud or Enterprise organization is one benefit
+that terraform enterprise has ove the open source version. 
 Other benefits include operational efficiency and reduced deployment times with more complex infrastructure.
 ```
+
+28. You have declared a variable called var.list which is a list of objects that all have an attribute id. What options do you
+have in order to produce a list of the ID's?
+
+```
+Option A: var.list[*].id, uses the splat operator [*] to iterate over all elements of the var.list list and then accesses
+the id attribute of each object. The result is a list of all the id values.
+
+Option B, [ for o in var.list : o.id ], uses a list comprehension to iterate over each object in the var.list list and create
+a new list that contains only the id attribute of each object.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
