@@ -18,3 +18,10 @@ Command: terraform plan -destroy (will show you a plan for destroying infra)
 
 Command: terraform destroy - (will show you what the destroy command will do before asking for permission to continue)
 ```
+
+23. Which of the following is the correct way to pass the value in the variable num_servers into a module with the input servers?
+```
+correct way to pass a value in the var num_servers is servers = var.num_servers
+```
+
+24. 
