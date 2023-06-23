@@ -24,4 +24,13 @@ Command: terraform destroy - (will show you what the destroy command will do bef
 correct way to pass a value in the var num_servers is servers = var.num_servers
 ```
 
-24. 
+24. A Terraform provisioner must be nested inside a resource configuration block. t or f?
+
+```
+Provisioners are used to execute scripts on a local or remote machine as part of resource creation or destruction.
+Provisioners can be used to bootstrap a resource, cleanup before destroy, run configuration management, etc.
+
+To use a provisioner in Terraform, you must include it as part of a resource configuration block.
+```
+
+25. 
