@@ -37,9 +37,9 @@ To use a provisioner in Terraform, you must include it as part of a resource con
 
 ```
 The default "local" Terraform backend stores the state file on the local disk of the machine running Terraform.
-The state file contains information about the resources managed by Terraform, such as their current state and any dependencies between
-them. When running Terraform commands, such as terraform plan or terraform apply, Terraform reads the state file to determine
-the current state of the resources and what changes need to be made to reach the desired state.
+The state file contains information about the resources managed by Terraform, such as their current state and any dependencies
+between them. When running Terraform commands, such as terraform plan or terraform apply, Terraform reads the state file to 7
+determine the current state of the resources and what changes need to be made to reach the desired state.
 ```
 
 26. You have multiple team members collaborating on infrastructure as code (IaC) using Terraform, and want to apply formatting standards for readability.
@@ -49,3 +49,11 @@ How can you format Terraform HCL (HashiCorp Configuration Language) code accordi
 Run the terraform fmt command during the code review phase of your CI/CD process
 ```
 
+27. What value does the Terraform Cloud/Terraform Enterprise private module registry provide over the public Terraform Module Registry?
+
+```
+Among other things, The ability to restrict modules to members of Terraform Cloud or Enterprise organization is one benefit that terraform enterprise has
+over terraform community edition.
+
+Other benefits include operational efficiency and reduced deployment times with more complex infrastructure.
+```
