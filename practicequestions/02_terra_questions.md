@@ -79,7 +79,13 @@ sensitive - Limits Terraform UI output when the variable is used in configuratio
 nullable - Specify if the variable can be null within the module.
 ```
 
-30. 
+30. What features does the hosted service Terraform Cloud provide?
+
+```
+Terraform Cloud is a hosted service provided by HashiCorp that allows users to centrally manage and automate their infrastructure
+deployments. It provides a web-based user interface (UI) that allows users to manage their infrastructure resources,
+configurations, and state files, as well as collaborate with team members
+```
 
 
 
