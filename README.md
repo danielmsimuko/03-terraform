@@ -1,8 +1,3 @@
----
-title: "Terraform"
-permalink: /
-layout: default
----
 
 # 03 - Learning Terraform
 
