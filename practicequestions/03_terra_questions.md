@@ -11,13 +11,15 @@ C. To input parameters for the apply command e.g export TF_VAR_db_username=admin
 You can use depends_on to explicitly declare the dependency. You can also specify multiple resources in the
 depends_on argument, and Terraform will wait until all of them have been created before creating the target resource.
 ```
-33. dasd
+33. You have never used Terraform before and would like to test it out using a shared team account for a cloud provider.
+The shared team account already contains 15 virtual machines (VM). You develop a Terraform configuration containing one VM,
+perform terraform apply, and see that your VM was created successfully. What should you do to delete the newly-created VM with Terraform?
 
+```
+You can simply use command terraform destroy since manually created resources will not be reflected in statefile.
+````
 34. asdas
 
-35. asda
-
-36. asda
 
 37. asda
 
@@ -25,4 +27,8 @@ depends_on argument, and Terraform will wait until all of them have been created
 
 39. asda
 
-40. asd
+40. asda
+
+41. asda
+
+42. asd
