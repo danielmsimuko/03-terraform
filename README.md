@@ -1,3 +1,9 @@
+---
+title: "Terraform"
+permalink: /
+layout: default
+---
+
 # 03 - Learning Terraform
 
 Terraform is popular infrastructure as code tool used to deploy infrastructure to cloud platforms declaratively through code. This means infrastructure can be deployed automatically, quickly, reduce human error and be reliable. 
