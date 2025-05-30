@@ -18,17 +18,3 @@ perform terraform apply, and see that your VM was created successfully. What sho
 ```
 You can simply use command terraform destroy since manually created resources will not be reflected in statefile.
 ````
-34. asdas
-
-
-37. asda
-
-38. asda
-
-39. asda
-
-40. asda
-
-41. asda
-
-42. asd
